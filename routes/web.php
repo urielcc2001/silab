@@ -29,3 +29,6 @@ Route::middleware([
 
 // Ruta para un componente de Livewire
 Route::get('/example', App\Livewire\Example::class);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
